@@ -57,7 +57,6 @@ def get_people(csv_path):
 
 
 def find_matches(t_path, csv_path):
-    dna_sequence = ""
     available_strs = get_available_strs(csv_path)
     people = get_people(csv_path)
 
@@ -68,7 +67,7 @@ def find_matches(t_path, csv_path):
         f = open(t_path + f"/{i}.txt", "r")
         dna_sequence = f.read()
 
-        # Find how much does every str occur in sequence.
+        # Find how much does every str occur in sequence the most.
         for available_str in available_strs:
             str_occurences.append(find_longest_str_streak(available_str, dna_sequence))
 
@@ -82,4 +81,5 @@ def find_matches(t_path, csv_path):
 
 
 if __name__ == '__main__':
+    find_matches(txt_path, csv_path_small)
     find_matches(txt_path, csv_path_large)
