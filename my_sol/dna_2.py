@@ -17,7 +17,6 @@ def get_reoccurrences(partial_sequence, str_part):
 
 
 def find_longest_str_streak(str_part: str, sequence: str):
-    # Here something is fishy
     streaks = []
     str_part_length = len(str_part)
     for i in range(len(sequence)):
@@ -25,6 +24,8 @@ def find_longest_str_streak(str_part: str, sequence: str):
         if sub_seq == str_part:
             streaks.append(1)
             to_add_on = get_reoccurrences(sequence[i + str_part_length:], str_part)
+
+            # This is weird..
             if to_add_on is None:
                 to_add_on = 0
             streaks[i] += to_add_on
