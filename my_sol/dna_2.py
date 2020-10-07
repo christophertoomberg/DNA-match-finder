@@ -82,8 +82,6 @@ def find_matches(t_path, csv_path):
             person_int_list = [int(p) for p in person[1:]]
             if person_int_list == str_occurences:
                 print(f"{person[0]} matches the DNA sequence from file {i}.txt")
-            else:
-                print("No match")
 
 
 if __name__ == '__main__':
