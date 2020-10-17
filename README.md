@@ -1,4 +1,4 @@
-### Problem set 6 from Harvard's Universtiy CS50 course
+### Problem set 6 from Harvard Universtiy CS50 course
 > I didn't take the course, but helped a friend out. And then I decided to put it here.
 > Maybe it will help someone.
 
